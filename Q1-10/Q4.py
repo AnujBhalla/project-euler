@@ -1,15 +1,7 @@
-import time 
-start_time = time.time()
+def palindrome_check(n):
+  return(str(n)[::-1] == str(n))
+   
+B = [i*j for i in range(100,1000) for j in range(100,1000) if palindrome_check(i*j)] 
+print(max(B))
 
 
-def palindrome_tester(n):
-  if str(n)[::-1] == str(n):
-     return True
-A=[]
-for i in range(100,1000):
-  for j in range(100,1000):
-    if palindrome_tester(i*j) == True:
-      A.append(i*j)
-print(max(A))
-
-print("--- %s s ---" % (time.time() - start_time))

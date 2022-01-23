@@ -1,12 +1,20 @@
 factors = []
-n = int(input("enter an integer:"))
-k=n
-i=2
-while i < k:
+n , i = 600851475143, 2
+
+while n > 1:
   if n % i == 0:
     factors.append(i)
     n = n/i 
-   
   else:
     i = i+1
-print(factors)
+print(max(factors))
+
+
+
+
+
+
+
+
+
+

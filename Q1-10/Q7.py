@@ -1,17 +1,23 @@
-prime_count = 1
-j=3
-while j > 0:
-  for i in range(2,j):
-    if j%i==0: 
-      j+=2
-      break 
-    elif i == j-1: 
-      prime_count+=1 
-      print(prime_count)
-      j+=2 
-  
-  
-  if prime_count == 10001:
-	  print(j-2)
-	  exit()
-	
+from math import sqrt, ceil
+
+def prime_check(n):
+	if n == 1:
+		return(False)
+	if n == 2:
+		return(True)
+	else: 
+		for i in range(2,ceil(sqrt(n))+1):
+			if n%i==0:
+				return(False)
+				exit
+		return(True)		
+			
+i = 1 		
+count = 0 
+
+while count < 10001:
+	if prime_check(i):
+		count +=1 
+	i+=1
+
+print(i-1)
