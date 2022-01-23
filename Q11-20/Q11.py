@@ -52,5 +52,5 @@ for p in range(60,len(D)-3):
 			left_diagonal_product *= D[p-(19*q)]
 		B.append(left_diagonal_product)
 
-print(B)
+
 print(max(B))

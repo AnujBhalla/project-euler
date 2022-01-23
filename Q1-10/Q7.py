@@ -8,8 +8,7 @@ def prime_check(n):
 	else: 
 		for i in range(2,ceil(sqrt(n))+1):
 			if n%i==0:
-				return(False)
-				exit
+				return(False)		
 		return(True)		
 			
 i = 1 		

@@ -9,13 +9,9 @@ def factor_tester(n):
 A=[]
 i=1
 sum = 0
-while True:
+while factor_tester(sum) < 500:
 	sum +=i
 	A.append(sum)
 	i+=1
-	print("factor count = " + str(factor_tester(sum)))
-	print(i)
-	if factor_tester(sum) >500:
-		break
 	
 print(A[-1])
