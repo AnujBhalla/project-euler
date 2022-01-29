@@ -1,4 +1,2 @@
-import math
-digits = [int(i) for i in str(math.factorial(100))]
-answer = sum(digits)
-print(answer)
+from math import factorial
+print(sum([int(i) for i in str(factorial(100))]))
