@@ -1,6 +1,4 @@
 from math import sqrt, ceil
-import time
-start = time.time()
 
 def prime_check(n):
 	if n == 1 or 0:
@@ -30,4 +28,3 @@ for a in range(-1000,1000):
 					product = a*b
 				break 
 print(product)
-print("runtime : " + str(time.time()-start) +"s")
